@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your shopping cart</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #navbar {
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+      }
+
+
+      a{
+        text-decoration: none;
+        color:#d8b24e
+      }
+
+      #navbar > div {
+        width: 12%;
+        height: auto;
+        padding: 18px;
+        color: #d8b24e;
+        font-family: poppins;
+      }
+
+      #navbar > div:first-child {
+        font-weight: 700;
+        font-size: 17px;
+      }
+      #navbar > div:first-child:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #logo {
+        width: 15%;
+        height: 57px;
+        padding-top: 10px;
+        cursor: pointer;
+      }
+
+      #icon {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 45px;
+
+      }
+
+      .fa-magnifying-glass:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-heart:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-circle-user:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-cart-shopping:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #footer {
+        width: 100%;
+        height: 430px;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        padding-top: 50px;
+        line-height: 2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      .sub-title {
+        color: #7e7e7e;
+      }
+      .sub-title1 {
+        color: #7e7e7e;
+      }
+      .sub-title2 {
+        color: #7e7e7e;
+        font-size: 13px;
+      }
+      .sub-title:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+      .sub-title1:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #input {
+        border: 1px solid #d8b24e;
+        border-radius: 10px;
+        width: 250px;
+        height: 35px;
+      }
+
+      #btn {
+        border-radius: 10px;
+        height: 35px;
+        width: 110px;
+        background-color: #d8b24e;
+        color: white;
+        border: none;
+        margin-left: 10px;
+        font-size: 11px;
+      }
+
+      #btn:hover {
+        background-color: black;
+      }
+
+      .sub1:hover {
+        cursor: pointer;
+        color: #d8b24e;
+      }
+
+      #icon2 {
+        text-align: center;
+        width: 20%;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        color: #7e7e7e;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+
+      .fa-facebook:hover {
+        cursor: pointer;
+        background-color: #4f57ba;
+        color: white;
+        border-radius: 10px;
+      }
+      .fa-twitter:hover {
+        cursor: pointer;
+        background-color: rgb(16, 169, 230);
+        color: white;
+        border-radius: 10px;
+      }
+      .fa-youtube:hover {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+      }
+      .fa-instagram:hover {
+        cursor: pointer;
+        background-color: #833ab4;
+        color: white;
+      }
+      #copy {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 18px;
+      }
+
+      #mycart {
+        margin-left: 100px;
+        font-size: 30px;
+      }
+
+      #tank {
+        width: 50%;
+        height: 500px;
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 100px;
+        display:flex;
+
+      }
+      #tank1 {
+        display: flex;
+        width: 70%;
+        height: 25px;
+        border-bottom: 1px solid gray;
+        width: fit-content;
+        padding: 0px 0px 20px 0px;
+      }
+      #tank2 {
+        display: flex;
+        width: 70%;
+        height: 25px;
+        border-bottom: 1px solid gray;
+        width: fit-content;
+        padding: 0px 0px 20px 0px;
+      }
+
+      .pro {
+        width: 500px;
+      }
+
+      .qty1 {
+        width: 100px;
+      }
+
+      .price1 {
+        width: 100px;
+      }
+
+      .pro2 {
+        width: 500px;
+      }
+
+      .qty2 {
+        width: 100px;
+      }
+
+      .price2 {
+        width: 100px;
+      }
+
+      #update{
+        margin-top: 80px;
+        margin-left: 30px;
+        height:300px;
+        
+      }
+
+      #update1{
+        width:400px;
+        text-align: center;
+        background-color: black;
+        color:white;
+        height:30px;
+        padding-top: 10px;
+        border-radius: 5px;
+      }
+      #update1:hover{
+        cursor: pointer;
+      }
+      #checkout1:hover{
+        cursor: pointer;
+      }
+
+      #checkout1{
+        width:400px;
+        text-align: center;
+        background-color:#d8b24e;
+        color:white;
+        height:30px;
+        margin-top: 40px;
+        padding-top: 10px;
+        border-radius: 5px;
+
+      }
+
+     #checkout1 a{
+        text-decoration: none;
+        color:white;
+      }
+      #update1 a{
+        text-decoration: none;
+        color:white;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+        <div><a href="subscribenow.html" id="subscribe">SUBSCRIBE NOW</a></div>
+      <img
+        id="logo"
+        src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+        alt=""
+      />
+
+      <div id="icon">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+        <div><i class="fa-regular fa-circle-user"></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+      </div>
+    </div>
+    <div id="mycart">My Cart</div>
+    <div id="tank">
+      <div><div id="tank1">
+        <div class="pro">PRODUCT</div>
+        <div class="qty1">QTY</div>
+        <div class="price1">PRICE</div>
+      </div>
+      <div id="tank2">
+        <div class="pro2"></div>
+        <div class="qty2"></div>
+        <div class="price2"></div>
+      </div></div>
+      
+      <div id="update">
+        <div id="update1"><a href="index1.html">UPDATE CART</a></div>
+      <div id="checkout1"><a href="checkout.html">CHECKOUT</a></div>
+      </div>
+      
+
+      </div>
+      
+      
+    </div>
+
+    <div id="footer">
+      <div class="foothead">
+        <p class="title">INFORMATION</p>
+        <p class="sub-title">About US</p>
+        <p class="sub-title">Associated Brands</p>
+        <p class="sub-title">FAQ</p>
+        <p class="sub-title">Collaborate with Fab Bag</p>
+        <p class="sub-title">Returns & Refunds</p>
+        <p class="sub-title">Terms & Conditions</p>
+        <p class="sub-title">Privacy Policy</p>
+      </div>
+      <div class="foothead">
+        <p class="title">CUSTOMER CARE</p>
+        <p class="sub-title1">
+          Call : 022-6805-6010 <br />
+          (Monday to Friday : 9 AM - 7 PM)
+        </p>
+        <p class="sub-title1">Mail : crew@fabbag.com</p>
+      </div>
+      <div class="foothead">
+        <p class="title">NEWSLETTER</p>
+        <p class="sub-title2">Signup for the latest offers, updates and news</p>
+        <input id="input" type="email" placeholder="Your email address" />
+        <button id="btn">SUBSCRIBE</button>
+        <p class="sub-title2">Don't worry we don't spam</p>
+      </div>
+    </div>
+    <div id="icon2">
+      <div class="icon2"><i class="fa-brands fa-facebook"></i></div>
+      <div class="icon2"><i class="fa-brands fa-twitter"></i></div>
+      <div class="icon2"><i class="fa-brands fa-instagram"></i></div>
+      <div class="icon2"><i class="fa-brands fa-youtube"></i></div>
+    </div>
+    <div><p id="copy">Copyright © 2021 fabbag.com All rights reserved.</p></div>
+  </body>
+</html>
+
+<script>
+var cartData = JSON.parse(localStorage.getItem("cart"));
+  console.log(cartData);
+
+  var total = cartData.reduce(function (sum, elem, index, arr) {
+    return sum + Number(elem.price);
+  }, 0);
+
+  var length = cartData.length;
+  console.log(length);
+
+  console.log(total);
+
+  document.querySelector(
+    ".pro2" 
+  ).innerText = ` The Empow-HER March Fab Bag `;
+  
+  document.querySelector(
+    ".qty2" 
+  ).innerText = ` ${length} `;
+  document.querySelector(
+    ".price2" 
+  ).innerText = `  Rs ${total}`;
+
+  cartData.map(function (elem) {
+    var box = document.createElement(".container11");
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+
+    var name = document.createElement("#namex");
+    name.textContent = elem.name;
+
+    var price = document.createElement("#pricex");
+    price.innerText = elem.price;
+
+    var btn = document.createElement("#cart1");
+    btn.innerText = "Remove";
+    btn.addEventListener("click", function () {
+      removeItem(elem, index);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#tank2").append(box);
+  });
+
+  function removeItem(elem, index) {
+    console.log(elem, index);
+    cartData.splice(index, 1);
+    console.log(cartData);
+    localStorage.setItem("cart", JSON.stringify(cartData));
+    window.location.reload();
+  }
+
+
+</script>

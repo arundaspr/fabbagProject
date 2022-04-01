@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Empow-HER March Fab Bag</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #navbar {
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #d8b24e;
+      }
+
+      #navbar > div {
+        width: 12%;
+        height: auto;
+        padding: 18px;
+        color: #d8b24e;
+        font-family: poppins;
+      }
+
+      #navbar > div:first-child {
+        font-weight: 700;
+        font-size: 17px;
+      }
+      #navbar > div:first-child:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #logo {
+        width: 15%;
+        height: 57px;
+        padding-top: 10px;
+        cursor: pointer;
+      }
+
+      #icon {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 45px;
+      }
+
+      .fa-magnifying-glass:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-heart:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-circle-user:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-cart-shopping:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #container1 {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        font-weight: 100;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        line-height: 2;
+      }
+      #img {
+        width: 458px;
+        height: 278px;
+      }
+      #imagez {
+        width: 115px;
+        height: 75px;
+      }
+      #imagez:hover {
+        cursor: pointer;
+      }
+
+      .container11 {
+        padding-left: 50px;
+        padding-top: 30px;
+      }
+
+      #btn1 {
+        border: none;
+        height: 30px;
+      }
+
+      #btn1:hover {
+        cursor: pointer;
+      }
+
+      #btn2 {
+        color: #7e7e7e;
+        border: none;
+        height: 30px;
+      }
+
+      #btn2:hover {
+        color: black;
+        cursor: pointer;
+      }
+
+      #count {
+        border: 1px solid #7e7e7e;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      #input1 {
+        width: 50px;
+        border: none;
+        color: #7e7e7e;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .plus-btn {
+        border: none;
+        color: #7e7e7e;
+        background-color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+      .plus-btn:hover {
+        cursor: pointer;
+      }
+      .minus-btn {
+        border: none;
+        color: #7e7e7e;
+        background-color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+      .minus-btn:hover {
+        cursor: pointer;
+      }
+
+      #cart1 {
+        width: 90%;
+        height: 40px;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      #add:hover {
+        cursor: pointer;
+      }
+
+      #icon3 {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        color: #7e7e7e;
+        font-size: 20px;
+      }
+      #icon31:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+      #icon32:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+      #icon33:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+      #des {
+        width: 100%;
+        height: 600px;
+        margin: auto;
+      }
+
+      #heads {
+        display: flex;
+        width: 60%;
+        height: 50px;
+        margin: auto;
+        margin-top: 50px;
+        justify-content: space-around;
+        padding-left: 10px;
+      }
+
+      .desc1 {
+        background-color: #d8b24e;
+        border-radius: 25px;
+        width: 130px;
+        height: 30px;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .desc2 {
+        border-radius: 25px;
+        width: 180px;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+      }
+      .desc2:hover {
+        cursor: pointer;
+        background-color: #d8b24e;
+      }
+
+      #bottom {
+        width: 55%;
+        margin: auto;
+        padding-top: 40px;
+        color: rgb(77, 75, 75);
+        line-height: 2;
+      }
+
+      #black {
+        color: black;
+      }
+
+      #footer {
+        width: 100%;
+        height: 430px;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        padding-top: 50px;
+        line-height: 2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      .sub-title {
+        color: #7e7e7e;
+      }
+      .sub-title1 {
+        color: #7e7e7e;
+      }
+      .sub-title2 {
+        color: #7e7e7e;
+        font-size: 13px;
+      }
+      .sub-title:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+      .sub-title1:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #input {
+        border: 1px solid #d8b24e;
+        border-radius: 10px;
+        width: 250px;
+        height: 35px;
+      }
+
+      #btn {
+        border-radius: 10px;
+        height: 35px;
+        width: 110px;
+        background-color: #d8b24e;
+        color: white;
+        border: none;
+        margin-left: 10px;
+        font-size: 11px;
+      }
+
+      #btn:hover {
+        background-color: black;
+      }
+
+      .sub1:hover {
+        cursor: pointer;
+        color: #d8b24e;
+      }
+
+      #icon2 {
+        text-align: center;
+        width: 20%;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        color: #7e7e7e;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+
+      .fa-facebook:hover {
+        cursor: pointer;
+        background-color: #4f57ba;
+        color: white;
+        border-radius: 10px;
+      }
+      .fa-twitter:hover {
+        cursor: pointer;
+        background-color: rgb(16, 169, 230);
+        color: white;
+        border-radius: 10px;
+      }
+      .fa-youtube:hover {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+      }
+      .fa-instagram:hover {
+        cursor: pointer;
+        background-color: #833ab4;
+        color: white;
+      }
+      #copy {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div><a href="subscribenow.html" id="subscribe">SUBSCRIBE NOW</a></div>
+
+      <img
+        id="logo"
+        src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+        alt=""
+      />
+
+      <div id="icon">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+        <div><i class="fa-regular fa-circle-user"></i></div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+      </div>
+    </div>
+    <div id="container1">
+      <div class="container11">
+        <img
+          id="img"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3.png?v=1646971494"
+          alt=""
+        />
+        <img
+          id="imagez"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3.png?v=1646971494"
+          alt=""
+        />
+      </div>
+      <div class="container11">
+        <p>Home</p>
+        <h2 id="namex">The Empow-HER March Fab Bag</h2>
+        <h2 id="pricex">Rs. 699.00</h2>
+        <p>
+          Who Runs The World? YOU. Celebrate YOU this month with blockbuster
+          Makeup & Skincare essentials worth...
+        </p>
+        <div>
+          <h5>Plans</h5>
+          <button id="btn1">1 MONTH</button>
+          <button id="btn2">3 MONTH</button>
+        </div>
+
+        <div id="count">
+          <button class="minus-btn" type="button" name="button">-</button>
+          <input id="input1" type="text" name="name" value="1" />
+          <button class="plus-btn" type="button" name="button">+</button>
+        </div>
+        <div id="cart1">
+          <p id="add"><a href="cart.html">ADD TO CART</a></p>
+        </div>
+        <div id="icon3">
+          <div><i id="icon31" class="fa-brands fa-twitter"></i></div>
+          <div><i id="icon32" class="fa-brands fa-facebook"></i></div>
+          <div><i id="icon32" class="fa-brands fa-google-plus-g"></i></div>
+        </div>
+      </div>
+    </div>
+    <div id="des">
+      <div id="heads">
+        <div class="desc1">DESCRIPTION</div>
+        <div class="desc2">VIEW PLANS</div>
+        <div class="desc2">RETURNS POLICY</div>
+        <div class="desc2">CUSTOMER REVIEWS</div>
+      </div>
+      <div id="bottom">
+        Who Runs The World? YOU. Celebrate YOU this month with blockbuster
+        Makeup & Skincare essentials worth over 2000/- inside The Empow-HER
+        March Fab Bag. Here's what you can expect inside your March Fab Bag:
+        <ul>
+          <li>
+            SUGAR Cosmetics Eye Lit You So! Vivid Eyeliner of your choice!*
+          </li>
+          <li>
+            SUGAR Cosmetics Smudge Me Not Liquid Lipstick Mini of your choice!*
+          </li>
+          <li>
+            Votre Jelly Brightening & Radiance Mask Glitter & Glow White Essence
+          </li>
+          <li>Tejas Blends Enriching Night Cream</li>
+          <li>ODEON Turmeric & Yogurt Face and Body Scrub</li>
+        </ul>
+        <p id="black">
+          *Two offers cannot be clubbed. Makeup choice will be available on the
+          order confirmation page, on a first-come, first-served basis.
+        </p>
+        <p>
+          FAB BAG delivers the best of beauty and makeup products once a month,
+          customized just for you.
+        </p>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="foothead">
+        <p class="title">INFORMATION</p>
+        <p class="sub-title">About US</p>
+        <p class="sub-title">Associated Brands</p>
+        <p class="sub-title">FAQ</p>
+        <p class="sub-title">Collaborate with Fab Bag</p>
+        <p class="sub-title">Returns & Refunds</p>
+        <p class="sub-title">Terms & Conditions</p>
+        <p class="sub-title">Privacy Policy</p>
+      </div>
+      <div class="foothead">
+        <p class="title">CUSTOMER CARE</p>
+        <p class="sub-title1">
+          Call : 022-6805-6010 <br />
+          (Monday to Friday : 9 AM - 7 PM)
+        </p>
+        <p class="sub-title1">Mail : crew@fabbag.com</p>
+      </div>
+      <div class="foothead">
+        <p class="title">NEWSLETTER</p>
+        <p class="sub-title2">Signup for the latest offers, updates and news</p>
+        <input id="input" type="email" placeholder="Your email address" />
+        <button id="btn">SUBSCRIBE</button>
+        <p class="sub-title2">Don't worry we don't spam</p>
+      </div>
+    </div>
+    <div id="icon2">
+      <div class="icon2"><i class="fa-brands fa-facebook"></i></div>
+      <div class="icon2"><i class="fa-brands fa-twitter"></i></div>
+      <div class="icon2"><i class="fa-brands fa-instagram"></i></div>
+      <div class="icon2"><i class="fa-brands fa-youtube"></i></div>
+    </div>
+    <div><p id="copy">Copyright © 2021 fabbag.com All rights reserved.</p></div>
+  </body>
+</html>
+
+<script>
+  var bagData = [
+    {
+      image_url:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-3.png?v=1646971494",
+      name: "The Empow Her March Fab Bag",
+      price: "599.00",
+    },
+  ];
+
+  var cartData = JSON.parse(localStorage.getItem("cart1")) || [];
+  bagData.map(function (elem) {
+    var box = document.createElement("div");
+    box.setAttribute("id", "container11");
+    
+
+    var img = document.createElement("img");
+    img.src = elem.image_url;
+    img.setAttribute("id", "img");
+
+    var name = document.createElement("h2");
+    name.textContent = elem.name;
+    name.setAttribute("id", "namex");
+
+    var price = document.createElement("h2");
+    price.innerText = elem.price;
+    price.setAttribute("id", "pricex");
+
+    var btn = document.createElement("#add");
+    btn.innerText = "Add to Cart";
+    btn.addEventListener("click", function () {
+      addToCart(elem);
+    });
+
+    box.append(img, name, price, btn);
+
+    document.querySelector("#container1").append(box);
+  });
+  function addToCart(elem) {
+    console.log(elem);
+    cartData.push(elem);
+    localStorage.setItem("cart1", JSON.stringify(cartData));
+    alert("item added to cart1");
+  }
+</script>

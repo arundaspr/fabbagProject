@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAB BAG: Monthly Makeup & Beauty Subscription for Women</title>
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #navbar {
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #d8b24e;
+      }
+
+      #navbar > div {
+        width: 12%;
+        height: auto;
+        padding: 18px;
+        color: #d8b24e;
+        font-family: poppins;
+      }
+
+      #navbar > div:first-child {
+        font-weight: 700;
+        font-size: 17px;
+      }
+      #navbar > div:first-child:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #logo {
+        width: 15%;
+        height: 57px;
+        padding-top: 10px;
+        cursor: pointer;
+      }
+
+      #icon {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 45px;
+      }
+
+      .fa-magnifying-glass:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-heart:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-circle-user:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      .fa-cart-shopping:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #image1 {
+        width: 100%;
+        height: 450px;
+      }
+
+      .bag1 {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 300;
+        text-align: center;
+        height: auto;
+        border-bottom: 2px solid #d8b24e;
+        width: fit-content;
+        padding: 2px 30px;
+        margin: auto;
+      }
+
+      .box1 {
+        width: 98%;
+        height: 450px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        margin-top: 65px;
+      }
+
+      .box1 + div {
+        width: 200px;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        display: grid;
+        font-weight: bold;
+      }
+
+      .image2 {
+        width: 100%;
+        height: 300px;
+        border: 3px solid #d8b24e;
+        border-radius: 60px;
+      }
+      .image2:hover {
+        cursor: pointer;
+      }
+
+      .para1 {
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      #bag2 {
+        width: 55%;
+        height: 650px;
+        display: flex;
+        margin: auto;
+      }
+
+      .table1 {
+        height: 390px;
+        width: 54%;
+        margin-left: 25px;
+        margin-top: 50px;
+      }
+
+      .table2 {
+        width: 100%;
+        height: 90px;
+        border: 0.1px solid #aeb6b7;
+        line-height: 5px;
+        font-size: 18px;
+        text-align: center;
+      }
+      .color1 {
+        color: #d8b24e;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .table3 {
+        width: 100%;
+        height: 250px;
+        border: 0.1px solid #aeb6b7;
+        line-height: 5px;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .table4 {
+        background-color: #e5b95f;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        border: 0.1px solid #e5b95f;
+      }
+
+      .table41 {
+        color: white;
+        width: 85%;
+        height: 30%;
+        margin: auto;
+        border: 1px solid white;
+        text-align: center;
+        padding-top: 6px;
+        border-radius: 3px;
+        font-weight: bold;
+        font-family: poppins;
+      }
+
+      .table41:hover {
+        color: black;
+        cursor: pointer;
+      }
+
+      h3 + p {
+        font-size: 16px;
+      }
+
+      #box2 {
+        height: 320px;
+        width: 85%;
+        display: flex;
+        box-sizing: border-box;
+        margin: auto;
+        padding-top: 60px;
+      }
+
+      .image3 {
+        height: 100%;
+        width: 32%;
+        margin: auto;
+        padding-left: 25px;
+        font-size: 14px;
+        line-height: 1px;
+      }
+
+      .image4 {
+        width: 100%;
+      }
+
+      .image4:hover {
+        cursor: pointer;
+      }
+
+      .image4 ~ h4:hover {
+        cursor: pointer;
+      }
+
+      .image4 ~ h5 {
+        color: grey;
+        font-size: 17px;
+        font-style: italic;
+      }
+
+      #bag3 {
+        width: 100%;
+        height: 500px;
+        background-color: #f2e5c7;
+      }
+
+      .test {
+        width: 70%;
+        height: 350px;
+        margin: auto;
+        padding-top: 50px;
+        text-align: center;
+        font-size: 17px;
+        line-height: 2;
+      }
+
+      .fa-quote-left {
+        font-size: 60px;
+      }
+
+      .test > p {
+        padding-top: 50px;
+      }
+
+      .test > h6 {
+        font-size: 14px;
+        color: #3d3d3a;
+      }
+
+      #hash {
+        text-align: center;
+        font-size: 20px;
+        word-spacing: 2px;
+        padding-top: 30px;
+        height: 50px;
+        width: 40%;
+        margin: auto;
+        box-sizing: border-box;
+      }
+
+      #trend {
+        height: auto;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+        margin: auto;
+        padding-top: 30px;
+      }
+
+      .image5 {
+        height: auto;
+        width: 12.5%;
+        font-size: 14px;
+        line-height: 1px;
+      }
+
+      .image6 {
+        height: 160px;
+        width: 100%;
+      }
+
+      .image6:hover {
+        cursor: pointer;
+      }
+
+      #bag7 {
+        width: 100%;
+        height: 200px;
+        background-color: #d8b24e;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .bag7 {
+        height: auto;
+        width: fit-content;
+        margin: auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      .imagex {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .imagex1 {
+        width: 100%;
+        height: 90px;
+        border-radius: 10px;
+      }
+
+      #footer {
+        width: 100%;
+        height: 430px;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+        padding-top: 50px;
+        line-height: 2;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      .sub-title {
+        color: #7e7e7e;
+      }
+      .sub-title1 {
+        color: #7e7e7e;
+      }
+      .sub-title2 {
+        color: #7e7e7e;
+        font-size: 13px;
+      }
+      .sub-title:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+      .sub-title1:hover {
+        color: #d8b24e;
+        cursor: pointer;
+      }
+
+      #input {
+        border: 1px solid #d8b24e;
+        border-radius: 10px;
+        width: 250px;
+        height: 35px;
+      }
+
+      #btn {
+        border-radius: 10px;
+        height: 35px;
+        width: 110px;
+        background-color: #d8b24e;
+        color: white;
+        border: none;
+        margin-left: 10px;
+        font-size: 11px;
+      }
+
+      #btn:hover {
+        background-color: black;
+      }
+
+      .sub1:hover {
+        cursor: pointer;
+        color: #d8b24e;
+      }
+
+      #icon2 {
+        text-align: center;
+        width: 20%;
+        height: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        color: #7e7e7e;
+        font-size: 18px;
+        padding-top: 20px;
+      }
+
+      .fa-facebook:hover {
+        cursor: pointer;
+        background-color: #4f57ba;
+        color: white;
+        border-radius: 10px;
+      }
+      .fa-twitter:hover {
+        cursor: pointer;
+        background-color: rgb(16, 169, 230);
+        color: white;
+        border-radius: 10px;
+      }
+      .fa-youtube:hover {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+      }
+      .fa-instagram:hover {
+        cursor: pointer;
+        background-color: #833ab4;
+        color: white;
+      }
+      #copy {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 18px;
+      }
+
+      .fa-circle-user {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .table41 > a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div><a href="subscribenow.html" id="subscribe">SUBSCRIBE NOW</a></div>
+
+      <img
+        id="logo"
+        src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+        alt=""
+      />
+
+      <div id="icon">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+        <div class="dropdown">
+          <i class="fa-regular fa-circle-user"></i>
+          <div class="dropdown-content">
+            <a href="checkout.html">Checkout</a>
+            <a href="subscribenow.html">My Account</a>
+            <a href="subscribenow.html">Log Out</a>
+          </div>
+        </div>
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+      </div>
+    </div>
+    <div>
+      <a href="subscribenow.html"
+        ><img
+          id="image1"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Homepage-Banner-bAG-Reveal-Recovered_2048x.png?v=1648750932"
+          alt=""
+      /></a>
+    </div>
+    <div class="bag1">
+      <h1>WHAT'S IN THE BAG</h1>
+    </div>
+    <div class="box1">
+      <div>
+        <a href="subscribenow.html"
+          ><img
+            class="image2"
+            src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Makeup-Reveal-1_3e43586e-b490-4832-8045-2ee0670e5018_2048x.png?v=1646291901"
+            alt=""
+        /></a>
+
+        <p class="para1">
+          SUGAR COSMETICS EYE LIT YOU SO! VIVID EYELINER OF YOUR CHOICE!*
+        </p>
+      </div>
+      <div>
+        <a href="subscribenow.html"
+          ><img
+            class="image2"
+            src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Makeup-Reveal-2_362d980f-306e-445b-a1fe-9c235927e093_2048x.png?v=1646475791"
+            alt=""
+        /></a>
+
+        <p class="para1">
+          SUGAR COSMETTICS SMUDGE ME NOT LIQUID LIPSTICK MINI OF YOUR CHOICE!*
+        </p>
+      </div>
+      <div>
+        <a href="subscribenow.html"
+          ><img
+            class="image2"
+            src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-1_d2e7ed04-5989-4dff-906f-01b1f7fd4d96_2048x.png?v=1646636542"
+            alt=""
+        /></a>
+
+        <p class="para1">
+          VOTRE JELLY BRIGTENING & RADIANCE MASK GLITTER & GLOW WHITE ESSENCE
+        </p>
+      </div>
+      <div>
+        <a href="subscribenow.html"
+          ><img
+            class="image2"
+            src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-2_9c6c45f0-844f-49cf-a8cd-fadd8e880c05_2048x.png?v=1646799273"
+            alt=""
+        /></a>
+        <p class="para1">TEJAS BLENDS ENRICHING NIGHT CREAM</p>
+      </div>
+    </div>
+    <div class="bag1">
+      <h1>SUBSCRIPTION</h1>
+    </div>
+    <div id="bag2">
+      <div class="table1">
+        <div class="table2">
+          <h3>1 MONTH</h3>
+          <p>SUBSCRIPTION</p>
+        </div>
+        <div class="table2">
+          <h3>RS. 699.00</h3>
+          <p>/ per month</p>
+        </div>
+        <div class="table3">
+          <p class="color1">ONE TIME PAYMENT</p>
+          <h3>RS. 699.00</h3>
+        </div>
+
+        <div class="table4">
+          <div class="table41"><a href="cart.html">ADD TO CART</a></div>
+        </div>
+      </div>
+      <div class="table1">
+        <div class="table2">
+          <h3>3 MONTH</h3>
+          <p>SUBSCRIPTION</p>
+        </div>
+        <div class="table2">
+          <h3>RS. 533.00</h3>
+          <p>/ per month</p>
+        </div>
+        <div class="table3">
+          <p class="color1">ONE TIME PAYMENT (11% OFF)</p>
+          <h3>Rs. 1,599.00 <strike>Rs. 1,797</strike></h3>
+        </div>
+
+        <div class="table4">
+          <div class="table41"><a href="cart.html">ADD TO CART</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="bag1">
+      <h1>PREVIOUS BAGS</h1>
+    </div>
+    <div id="box2">
+      <div class="image3">
+        <img
+          class="image4"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal-2_large.gif?v=1644395072"
+          alt=""
+        />
+        <h4>Feb'22 The Colour Me Cupid Fab Bag</h4>
+        <h5>from Rs. 699.00</h5>
+      </div>
+      <div class="image3">
+        <img
+          class="image4"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal--3_large.png?v=1641707966"
+          alt=""
+        />
+        <h4>Jan'22 The Beauty Resolution Fab Bag</h4>
+        <h5>from Rs. 699.00</h5>
+      </div>
+      <div class="image3">
+        <img
+          class="image4"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-3_large.gif?v=1638191014"
+          alt=""
+        />
+        <h4>Dec'21 The X-Must Haves Fab Bag</h4>
+        <h5>from Rs. 699.00</h5>
+      </div>
+      <div class="image3">
+        <img
+          class="image4"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPageBanner--Skincare-Reveal-4_1_large.gif?v=1636696484"
+          alt=""
+        />
+        <h4>Nov'21 The Diva-Li-Cious Fab Bag</h4>
+        <h5><strike>RS.1,797.00</strike> from Rs. 699.00</h5>
+      </div>
+    </div>
+    <div id="bag3">
+      <div class="bag1"><h1>TESTIMONIALS</h1></div>
+      <div class="test">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>
+          I love each and every Fab Bag that I recieve each month past three
+          years. I am so much in love with fab bags and all the lovely products
+          and cute little pouches I get. I love Fab Bag.
+        </p>
+        <h6>- Munira</h6>
+      </div>
+    </div>
+    <div>
+      <h1 id="hash">#TRENDINGNOW AT THE GOSSIP CORNER</h1>
+    </div>
+    <div id="trend">
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.29350-15/277506684_981273216112323_6154546984388561315_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=NdRbg8xrXQQAX-OqHhJ&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_JiklmCMgqIK-ZwRjzGgy9xLCWCs9ONKXeo2VkZTTHrQ&oe=62491DF6"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.29350-15/277400823_1029923241068187_2237084937848481104_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=E6ipS-sdcWkAX9MTHFd&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9IhUaINiZgQXtU_thUEbYYAvMkYNneUBcGXiRCy1ow_A&oe=62492B65"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.2885-15/277244118_1137612170325014_6115123338903483964_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=1eDqLKM_nrMAX-zPCvS&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9QUTxv5GC05KFlBwI8bHvGomXyBrO-dwyPkQ5wwY3hMw&oe=62491813"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.2885-15/277453141_676674860425464_526544100469572142_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=AUv3BXZEJ8IAX-WObKO&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9oJt3pugnnLRJyfUSVZccF2FXmlljVsFvyaPKXyDq7XQ&oe=6249DEF2"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.2885-15/277238824_1620492164996720_941436090375351376_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=q548P9bi3J4AX_c606f&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9snIW9CHLVdNINq7gL98MK3w_Jx8Wsgg7T4CAMWGSP6w&oe=624AF43D"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.2885-15/277415079_1090950081450912_5829829633575419818_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=X2QCq0X-QPUAX_yC83t&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_yiMDC5N6TE8HxFYMtOfyI9txZ_btrC-9BTCZomGOUCQ&oe=624AAA61"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.29350-15/277229102_155271073609571_8874506232214967280_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=s5bkF1ucPjIAX_4_aBT&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT830VrrQe-AT0aXnt-BZujkcgYlkstZCS6IFo-_4Nz-cw&oe=6249AE48"
+          alt=""
+        />
+      </div>
+      <div class="image5">
+        <img
+          class="image6"
+          src="https://scontent.cdninstagram.com/v/t51.29350-15/277221860_110117771630612_1841976582925545615_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=vUo6HY1Wp3AAX9XykwN&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-Ehwi5wBLtdPZF7CjmakvrTBh2oe080GqUO9X-LIHs6w&oe=624AF17C"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="bag7">
+      <div class="bag7">
+        <img
+          class="imagex1"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/sugar_1_160x160.jpg?v=1548837170"
+          alt=""
+        />
+      </div>
+      <div class="bag7">
+        <img
+          class="imagex"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Plum_Logo_For_Olive_and_Macadamia_Hair_Spa_Kit_160x160.png?v=1625063052"
+          alt=""
+        />
+      </div>
+      <div class="bag7">
+        <img
+          class="imagex"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Tru_hair_logo_160x160.png?v=1625063080"
+          alt=""
+        />
+      </div>
+      <div class="bag7">
+        <img
+          class="imagex1"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/WOC_Beauty_Logo_160x160.jpg?v=1602225835"
+          alt=""
+        />
+      </div>
+      <div class="bag7">
+        <img
+          class="imagex1"
+          src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Baiser_India_Logo_160x160.jpg?v=1625063066"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="footer">
+      <div class="foothead">
+        <p class="title">INFORMATION</p>
+        <p class="sub-title">About US</p>
+        <p class="sub-title">Associated Brands</p>
+        <p class="sub-title">FAQ</p>
+        <p class="sub-title">Collaborate with Fab Bag</p>
+        <p class="sub-title">Returns & Refunds</p>
+        <p class="sub-title">Terms & Conditions</p>
+        <p class="sub-title">Privacy Policy</p>
+      </div>
+      <div class="foothead">
+        <p class="title">CUSTOMER CARE</p>
+        <p class="sub-title1">
+          Call : 022-6805-6010 <br />
+          (Monday to Friday : 9 AM - 7 PM)
+        </p>
+        <p class="sub-title1">Mail : crew@fabbag.com</p>
+      </div>
+      <div class="foothead">
+        <p class="title">NEWSLETTER</p>
+        <p class="sub-title2">Signup for the latest offers, updates and news</p>
+        <input id="input" type="email" placeholder="Your email address" />
+        <button id="btn">SUBSCRIBE</button>
+        <p class="sub-title2">Don't worry we don't spam</p>
+      </div>
+    </div>
+    <div id="icon2">
+      <div class="icon2"><i class="fa-brands fa-facebook"></i></div>
+      <div class="icon2"><i class="fa-brands fa-twitter"></i></div>
+      <div class="icon2"><i class="fa-brands fa-instagram"></i></div>
+      <div class="icon2"><i class="fa-brands fa-youtube"></i></div>
+    </div>
+    <div><p id="copy">Copyright © 2021 fabbag.com All rights reserved.</p></div>
+  </body>
+</html>
